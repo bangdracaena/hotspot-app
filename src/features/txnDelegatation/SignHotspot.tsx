@@ -65,6 +65,7 @@ const SignHotspot = () => {
 
       const responseParams = {
         status: 'success',
+        gatewayAddress: gatewayTxn?.gateway?.b58 || locationTxn?.gateway?.b58,
       } as WalletLink.SignHotspotResponse
 
       if (gatewayTxn) {
